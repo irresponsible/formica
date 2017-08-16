@@ -1,0 +1,12 @@
+{application, formica,
+ [{description, "Tiny forms handling library"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {env,[]},
+  {modules, [formica]},
+  {maintainers, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.
