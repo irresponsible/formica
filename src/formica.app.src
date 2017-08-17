@@ -6,7 +6,8 @@
    [kernel, stdlib]},
   {env,[]},
   {modules, [formica]},
-  {maintainers, []},
+  {maintainers, ["Antonis Kalou <kalouantonis@protonmail.com>",
+                 "James Laver <james.laver@gmail.com>"]},
   {licenses, ["MIT"]},
   {links, []}
  ]}.
