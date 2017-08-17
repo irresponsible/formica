@@ -1,7 +1,6 @@
 -module(prop_formica).
 
 -include_lib("proper/include/proper.hrl").
--include_lib("eunit/include/eunit.hrl").
 
 not_2tup() ->
   ?SUCHTHAT(T, term(), not (is_tuple(T) andalso tuple_size(T) =:= 2)).
