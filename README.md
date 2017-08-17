@@ -15,9 +15,6 @@ validate_form(Data) ->
   formica:validate(Data, #{<<"email">>    => fun validate_email/1,
                            <<"password">> => fun validate_password/1}).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Validators
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 validate_email(U) ->
   {ok, EmailReg} = re:compile("^[a-z0-9](\.?[a-z0-9_-]){0,}@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$"),
   case re:run(U, EmailReg) of
