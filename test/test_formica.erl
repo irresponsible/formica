@@ -1,13 +1,6 @@
 -module(test_formica).
+
 -include_lib("eunit/include/eunit.hrl").
-
-collate_errors_test() ->
-  List = [{ok, {a, 3}}, 420, {error, {x, 1}}, {ok, {b, 5}}, {error, {y, 2}}],
-  #{x := 1, y := 2} = formica:collate_errors(List).
-
-collate_oks_test() ->
-  List = [{ok, {a, 3}}, 420, {error, 1}, {ok, {b, 5}}, {error, 2}],
-  #{a := 3, b := 5} = formica:collate_oks(List).
 
 validate_test() ->
   Data = [{<<"name">>, <<"Ozzy Osbourne">>}, {<<"age">>, 68}],
